@@ -2,7 +2,7 @@
 
 ## Business Problem
 
-This is my Verizon device-financing default risk project. Verizon earns revenue by financing phones through customer payment plans, but loses money when customers become seriously delinquent or default on those payments. The business goal is to identify higher-risk applicants before approval and use model-driven thresholds to improve cash flow while still supporting customer growth.
+This is my Verizon device-financing default risk project, completed as part of coursework at the **University of Chicago**. Verizon earns revenue by financing phones through customer payment plans, but loses money when customers become seriously delinquent or default on those payments. The business goal is to identify higher-risk applicants before approval and use model-driven thresholds to improve cash flow while still supporting customer growth.
 
 Verizon device financing creates a practical tradeoff between growth and credit risk:
 
