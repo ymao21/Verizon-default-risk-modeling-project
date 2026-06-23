@@ -1,18 +1,18 @@
 # Verizon Device Financing Default Risk Model
 
-This repository presents a Verizon device-financing risk analysis project from Team Hexa. The business problem was straightforward: Verizon earns revenue by financing phones, but loses money when customers default on device payments. The project evaluated whether a predictive model could identify higher-risk financing applicants and improve cash flow by reducing default losses.
-
-The strongest project artifacts are the final presentation and EDA report. Because the original modeling code and raw applicant-level dataset are not available in this repo, I added a reproducible Python workflow in `src/` that implements the same modeling structure described in the reports: preprocessing, class-weighted classification, model comparison, logistic regression interpretation, threshold selection, and cash-flow impact estimation.
-
 ## Business Problem
 
-Verizon device financing creates a tradeoff between growth and credit risk:
+This is my Verizon device-financing default risk project. Verizon earns revenue by financing phones through customer payment plans, but loses money when customers become seriously delinquent or default on those payments. The business goal is to identify higher-risk applicants before approval and use model-driven thresholds to improve cash flow while still supporting customer growth.
+
+Verizon device financing creates a practical tradeoff between growth and credit risk:
 
 - Approving more customers can increase revenue.
 - Approving high-risk customers can increase default losses.
 - Rejecting too many customers can reduce sales and customer growth.
 
 The goal was to identify a model that predicts 90-day delinquency/default risk and supports a business decision threshold that balances sales growth against expected losses.
+
+This repository includes the final presentation, EDA report, selected business visuals, and a Python modeling workflow that implements the project methodology: preprocessing, class-weighted classification, model comparison, logistic regression interpretation, threshold selection, and cash-flow impact estimation.
 
 ## Modeling Approach
 
@@ -126,4 +126,4 @@ python src/verizon_default_modeling_workflow.py --data data/verizon_applicants.c
 
 ## Notes
 
-The raw Verizon applicant dataset is not included in this repository. The code in `src/` is a reproducible implementation scaffold based on the modeling process documented in the project reports, not a claim that the original analysis code was recovered.
+The raw Verizon applicant dataset is not included in this repository because it contains applicant-level financing records. The code in `src/` is organized so the modeling workflow can be run when the dataset is available locally.
